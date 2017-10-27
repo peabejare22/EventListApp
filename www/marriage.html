@@ -1,0 +1,60 @@
+<html>
+<head lang="en">
+	<title> Marriage </title>
+<meta charset="UTF-8">
+<style>
+body
+{
+	background-color: skyblue;
+}
+</style>
+</head>
+
+	  
+  <script language="JavaScript">
+    function showInput() {
+        
+    window.localStorage.setItem('name',document.getElementById('name').value);
+      document.getElementById('name').value=null
+    window.localStorage.setItem('date',document.getElementById('date').value);
+      document.getElementById('date').value=null
+    window.localStorage.setItem('venue',document.getElementById('venue').value);
+      document.getElementById('venue').value=null
+    window.localStorage.setItem('visitors',document.getElementById('visitors').value);
+      document.getElementById('visitors').value=null
+
+    }
+  </script>
+
+<body>
+       <img src="img/marriage1.png" width="98%" height="20%"><br><br><br>
+<center>
+  <form>
+    <label><b><font size="6">Client Name:</font></b></label>
+    <input type="text" name="message" id="name"><br>
+
+    
+        <label><b><font size="6">Date:</font></b></label>
+                <input type="text" name="message" id="date"><br>
+
+        <label><b><font size="6">Venue:</font></b></label>
+        	<input type="text" name="message" id="venue"><br>
+
+        <label><b><font size="6">Number of Visitors:</font></b></label>
+        	<input type="text" name="message" id="visitors"><br>
+
+    
+  </form>
+    <br>
+  <input type="submit" size='10' value="Save" onclick="showInput();">
+ <br><br>
+ 
+  <p><span id='name'></span></p>
+  <p><span id='date'></span></p>
+  <p><span id='venue'></span></p>
+  <p><span id='visitors'></span></p>
+</center>
+    
+
+</body>
+</html>

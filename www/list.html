@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body bgcolor="skyblue">
+    <center><h1><font style="font-size: 150px;">List of Events</h1></font></center>
+  <hr style="background-color: black">  
+<input readonly="true" id="name" style="background-color: transparent; border-color: transparent; font-size: 80px;padding-left: 15px;padding-top:50px;font-family: 'Times New Roman'" ><br>
+<input readonly="true" id="date" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br>
+<input readonly="true" id="venue" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br>
+<input readonly="true" id="visitors" style="background-color: transparent; border-color: transparent;font-size: 80px;padding-left: 15px;padding-top: 10px; font-family: 'Times New Roman'"><br>
+
+</body>
+<script>
+  document.getElementById('name').value = window.localStorage.getItem('name');
+  document.getElementById('date').value = window.localStorage.getItem('date');
+  document.getElementById('venue').value = window.localStorage.getItem('venue');
+  document.getElementById('visitors').value = window.localStorage.getItem('visitors');
+</script>
+</html>
